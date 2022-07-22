@@ -1,0 +1,340 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Homepage_Header_w_overlay.jpg",
+            "image_align_desktop": "center",
+            "image_align_mobile": "center",
+            "text_position": "center center",
+            "heading": "Natural Products for You",
+            "heading_size": "h1",
+            "text": "<p>and your little one<\/p>",
+            "enlarge_text": true,
+            "button_1_text": "Shop Our Creams",
+            "button_1_url": "",
+            "button_2_text": "",
+            "button_2_url": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Collections_Page_Header.jpg",
+            "image_align_desktop": "center",
+            "image_align_mobile": "center",
+            "text_position": "center center",
+            "heading": "Slideshow",
+            "heading_size": "h1",
+            "text": "<p>Pair text with an image to tell a story<\/p>",
+            "enlarge_text": false,
+            "button_1_text": "See more",
+            "button_1_url": "",
+            "button_2_text": "",
+            "button_2_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "size": "full_fixed",
+        "height_desktop": 700,
+        "height_mobile": 460,
+        "enable_split": false,
+        "tint_color": "#000000",
+        "tint_opacity": 20,
+        "text_box_style": "none",
+        "text_bg_color": "#000000",
+        "text_bg_opacity": 50,
+        "text_color": "#ffffff",
+        "text_below_mobile": false,
+        "slide_mode": "slide",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_mobile_arrows": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "block-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rich text"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe product, share announcements, or welcome customers to your store.<\/p>",
+            "text_size": 100
+          }
+        },
+        "block-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Some link",
+            "button_link": "shopify:\/\/pages\/contact-us",
+            "button_style": "feature-link"
+          }
+        }
+      },
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "color_scheme": "scheme-1",
+        "color_bg": "",
+        "color_heading": "",
+        "color_text": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our Most Popular Products",
+        "collection": "soaps",
+        "grid_show_vendor": false,
+        "products_per_row_int": 3,
+        "product_rows_int": 1,
+        "show_view_all": false
+      }
+    },
+    "image-gallery": {
+      "type": "image-gallery",
+      "disabled": true,
+      "blocks": {
+        "image-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "tint_color": "#000000",
+            "tint_opacity": 30,
+            "size": "third",
+            "link": "",
+            "title": "Image text",
+            "subheading": "",
+            "cta_text": "See more",
+            "text_color": "#ffffff"
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "tint_color": "#000000",
+            "tint_opacity": 20,
+            "size": "third",
+            "link": "",
+            "title": "Image text",
+            "subheading": "",
+            "cta_text": "See more",
+            "text_color": "#ffffff"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "tint_color": "#000000",
+            "tint_opacity": 10,
+            "size": "third",
+            "link": "",
+            "title": "Image text",
+            "subheading": "",
+            "cta_text": "See more",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image-0",
+        "image-1",
+        "image-2"
+      ],
+      "settings": {
+        "skip_container": true
+      }
+    },
+    "slideshow-with-text": {
+      "type": "slideshow-with-text",
+      "disabled": true,
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {}
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "layout": "left",
+        "heading": "Slideshow with text",
+        "text": "<p>Pair large text with images to give focus to your chosen product, collection or blog post. Add details on availability, style or even provide a review.<\/p>",
+        "button_text": "Shop",
+        "button_link": "",
+        "button_style": "button button--alt",
+        "text_alignment": "left",
+        "text_center_mobile": false,
+        "bg_style": "content",
+        "color_scheme": "scheme-1",
+        "color_bg": "",
+        "color_heading": "",
+        "color_text": "",
+        "slide_mode": "slide",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "slide_show_mobile_arrows": true
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "testimonial-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews or press releases to showcase your store's happy customers.",
+            "link": "",
+            "author_name": "Author's name"
+          }
+        },
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews or press releases to showcase your store's happy customers.",
+            "link": "",
+            "author_name": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "autoplay": false,
+        "logo_height": 40
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "settings": {
+        "skip_container": false,
+        "image": "shopify:\/\/shop_images\/woman-holding-baby-while-sitting-on-fur-bean-bag-698878.jpg",
+        "layout": "left",
+        "heading": "We Make Our Pure Products Just For Mothers",
+        "text": "<p>Feel the love with our natural products that are wholesome for you and your little one. Feel the love with our natural products that are wholesome for you and your little one. Feel the love with our natural.<\/p>",
+        "button_text": "Learn More",
+        "button_link": "",
+        "button_style": "button button--alt",
+        "text_alignment": "left",
+        "text_center_mobile": true,
+        "bg_style": "content",
+        "color_scheme": "scheme-2",
+        "color_bg": "",
+        "color_heading": "",
+        "color_text": ""
+      }
+    },
+    "165796616410cc1414": {
+      "type": "image-with-text",
+      "settings": {
+        "skip_container": false,
+        "image": "shopify:\/\/shop_images\/PHOTO-2019-12-03-17-20-47_3.jpg",
+        "layout": "right",
+        "heading": "Our Ingredients Are Amazing",
+        "text": "<p>Pair text with an image to give focus to a selected product, collection or blog post. Add details on availability, style or even provide a review.<\/p>",
+        "button_text": "Learn More",
+        "button_link": "",
+        "button_style": "feature-link",
+        "text_alignment": "left",
+        "text_center_mobile": false,
+        "bg_style": "content",
+        "color_scheme": "scheme-1",
+        "color_bg": "",
+        "color_heading": "",
+        "color_text": ""
+      }
+    },
+    "165798160237df1af9": {
+      "type": "collection-list",
+      "settings": {
+        "title": "Products by Category",
+        "collections_per_row_int": 4
+      }
+    },
+    "video": {
+      "type": "video",
+      "blocks": {
+        "block-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video",
+            "heading_size": "h2"
+          }
+        },
+        "block-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with a video to draw attention to an important detail of your brand or product line.<\/p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "block-0",
+        "block-1"
+      ],
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "skip_container": false,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "text_box_style": "none",
+        "text_bg_color": "#000000",
+        "text_bg_opacity": 50,
+        "text_color": "#ffffff",
+        "text_position": "center center",
+        "text_below_mobile": false
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "",
+        "blog": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich-text",
+    "featured-collection",
+    "image-gallery",
+    "slideshow-with-text",
+    "testimonials",
+    "image-with-text",
+    "165796616410cc1414",
+    "165798160237df1af9",
+    "video",
+    "featured-blog"
+  ]
+}

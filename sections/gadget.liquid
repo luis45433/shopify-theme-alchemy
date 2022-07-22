@@ -1,0 +1,44 @@
+<section>
+    <div>
+        <h3>{{ section.settings.title }}</h3>
+        {{ section.settings.description }}
+        {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url}}" alt="">
+            {% else %}
+                {% capture current %}{% cycle 1 %}{% endcapture %}
+                {{'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+        <button>Shop Now!</button>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "gadget",
+   "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "default": "Example gadget title",
+        "label": "Stuff label"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Stuff image"
+    },
+    {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>Example gadget description</p>",
+        "label": "Stuff label description"
+    }
+   ],
+   "presets": [
+    {
+        "category": "Gadget",
+        "name":"Test Gadget"
+    }
+   ]
+}
+{% endschema %}
