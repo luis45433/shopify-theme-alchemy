@@ -7785,3 +7785,24 @@ shopify-payment-terms {
 }
 
 /********** ENTER YOUR CUSTOM CODE BELOW **********/
+@font-face {
+  font-family: "ClickerScript-Regular";
+  src: url({{ "ClickerScript-Regular.woff2" | asset_url }}) format("woff2");
+  url("ClickerScript-Regular.woff") format("woff");
+}
+
+/* h1, h2 {
+  font-family: "ClickerScript-Regular"!important;
+} */
+
+.clicker-font {
+  font-family: "ClickerScript-Regular"!important;
+}
+
+.clicker-font-size-4 {
+  font-size: {{ font_size_base_int | times: 4.0 }}px;
+}
+
+.clicker-font-size-3 {
+  font-size: {{ font_size_base_int | times: 3.0 }}px;
+}
