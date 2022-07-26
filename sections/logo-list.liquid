@@ -1,6 +1,10 @@
 {%- if section.settings.heading != blank or section.blocks.size > 0 -%}
   {%- liquid
-    if section.blocks.size == 4
+    if section.blocks.size == 6
+      assign col_class = 'sixth'
+    elsif section.blocks.size == 5
+      assign col_class = 'fifth'
+    elsif section.blocks.size == 4
       assign col_class = 'quarter'
     elsif section.blocks.size == 3
       assign col_class = 'third'
@@ -220,7 +224,7 @@
         "label": "Custom text color"
       }
     ],
-    "max_blocks": 4,
+    "max_blocks": 6,
     "blocks": [
       {
         "type": "logo",
