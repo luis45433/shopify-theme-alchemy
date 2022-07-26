@@ -1,3 +1,7 @@
+<!-- <section>
+  <img src="{{ section.settings.image | img_url: 'medium' }}" alt="">
+</section> -->
+
 {%- liquid
   assign bg_class = ''
 
@@ -40,7 +44,11 @@
         {% for tag in current_tags %} / {{ tag }}{% endfor %}
       </h1>
     {%- else -%}
-      <h1>{{ title }}</h1>
+      <h1 class="clicker-font clicker-font-size-4">{{ title }}</h1>
+      <h1 class="playfair_display_n4">{{ section.settings.main-title }}</h1>
+      <h2 class="clicker-font clicker-font-size-4">{{ section.settings.sub-title }}</h2>
+      <!-- <input class="button-pink" type="button" value="Shop Our Creams"> -->
+      <input class="input-with-button__button button" type="button" value="Shop Our Creams">
     {%- endif -%}
   </div>
 
@@ -60,6 +68,18 @@
     "name": "Hero banner",
     "class": "section-banner banner-candidate",
     "settings": [
+      {
+        "type": "text",
+        "id": "main-title",
+        "label": "Heading",
+        "default": "We care about Mums and Babies"
+      },
+      {
+        "type": "text",
+        "id": "sub-title",
+        "label": "Heading",
+        "default": "and your little one"
+      },
       {
         "type": "paragraph",
         "content": "The hero banner contains the main page title (h1). If you choose to hide it, we advise you to provide an h1 title in another section (image banner or background video) for SEO purposes."
@@ -130,6 +150,21 @@
         ],
         "default": "center"
       }
+    ],
+    "presets": [
+      {
+        "name": "Hero banner",
+        "category": "Hero banner"
+      }
     ]
   }
 {% endschema %}
+
+{% stylesheet %}
+  .button-pink {
+    background-color: #f3ab9d;
+    border-color: #f3ab9d;
+    color: white;
+    padding: 16px;
+  }
+{% endstylesheet %}
