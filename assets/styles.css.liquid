@@ -758,6 +758,10 @@ main {
   width: calc(20% - {{ grid_gutter }}px);
 }
 
+.column.sixth {
+  width: calc(16.6% - {{ grid_gutter }}px);
+}
+
 .column.full {
   width: calc(100% - {{ grid_gutter }}px);
 }
@@ -7791,9 +7795,9 @@ shopify-payment-terms {
   url("ClickerScript-Regular.woff") format("woff");
 }
 
-/* h1, h2 {
-  font-family: "ClickerScript-Regular"!important;
-} */
+.heading-menu-font {
+  font-family: {{ heading_font.family }};
+}
 
 .clicker-font {
   font-family: "ClickerScript-Regular"!important;
