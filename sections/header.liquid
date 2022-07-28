@@ -93,7 +93,7 @@
             <div class="inline-header-nav">
               <div class="nav-row multi-level-nav" role="navigation" aria-label="{{ 'general.navigation.main_navigation_aria_label' | t | escape }}">
                 <div class="tier-1">
-                  <ul>
+                  <ul class="heading-menu-font">
                     {%- for link in linklists[section.settings.menu_linklist].links -%}
                       {%- liquid
                         assign has_mega_drop_down = true
@@ -226,6 +226,20 @@
               </div>
             </div>
           {%- endif -%}
+          
+          <!-- <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link text-white" href="#">All Natural Products</a>
+                  <a class="nav-link text-white" href="#">Our Story</a>
+                  <a class="nav-link text-white" href="#">Get In Touch</a>
+                  <a class="nav-link text-white" href="#">Natural Care Blog</a>
+                  <a class="nav-link text-white" href="#">Wholesale</a>
+                </div>
+              </div>
+            </div>
+          </nav> -->
 
           <details class="main-menu-wrapper" id="main-menu-disclosure">
             <summary tabindex="-1">
