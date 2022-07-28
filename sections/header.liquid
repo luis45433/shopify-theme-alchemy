@@ -465,7 +465,7 @@
           {%- endif -%}
 
           {%- if template == 'index' -%}
-          {% assign new_name = '<span class="clicker-font clicker-font-size-3">The</span> <span style="text-transform:uppercase">Natural Mums</span> <span class="clicker-font clicker-font-size-3">Company</span>' %}
+          {% assign new_name = '<p><span class="just-sunday-font clicker-font-size-4">The</span> <span style="text-transform:uppercase">Natural</span></p> <p><span style="text-transform:uppercase">Mums</span> <span class="just-sunday-font clicker-font-size-4">Company</span></p>' %}
             <h1 class="logo__text{% if section.settings.logo != blank %} hidden{% endif %}">
               <a href="{{ routes.root_url }}">{{ new_name }}</a>
             </h1>

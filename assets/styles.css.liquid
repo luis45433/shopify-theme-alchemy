@@ -758,6 +758,10 @@ main {
   width: calc(20% - {{ grid_gutter }}px);
 }
 
+.column.sixth {
+  width: calc(16.6% - {{ grid_gutter }}px);
+}
+
 .column.full {
   width: calc(100% - {{ grid_gutter }}px);
 }
@@ -7791,6 +7795,12 @@ shopify-payment-terms {
   url("ClickerScript-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "JustSunday";
+  src: url({{ "JustSunday.woff2" | asset_url }}) format("woff2");
+  url("JustSunday.woff") format("woff");
+}
+
 /* h1, h2 {
   font-family: "ClickerScript-Regular"!important;
 } */
@@ -7805,4 +7815,8 @@ shopify-payment-terms {
 
 .clicker-font-size-3 {
   font-size: {{ font_size_base_int | times: 3.0 }}px;
+}
+
+.just-sunday-font {
+  font-family: "JustSunday"!important;
 }

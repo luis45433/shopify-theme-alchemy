@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+        <div class="col-sm-2">
+            {% if section.settings.icon != blank %}
+            <img src="{{ section.settings.icon | img_url}}" alt="">
+            {% else %}
+                {{ 'product-1' | placeholder_svg_tag }}
+            {% endif %}
+            {{ section.settings.description }}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "icons",
+   "settings": [
+    {
+        "type": "image_picker",
+        "id": "icon",
+        "label": "Icon image"
+    },
+    {
+        "type": "richtext",
+        "id": "description",
+        "default": "<p>Everything is safe and green</p>",
+        "label": "Icon label description"
+    }
+   ],
+   "presets": [
+    {
+        "category": "Icons",
+        "name":"Icons list"
+    }
+   ]
+}
+{% endschema %}
