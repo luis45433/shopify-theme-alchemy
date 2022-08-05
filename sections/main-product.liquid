@@ -44,7 +44,7 @@
 
             {%- when 'title' -%}
               <div class="product-form-block product-title" {{ block.shopify_attributes }}>
-                <h1 class="h2">{{ product.title }}</h1>
+                <h1 class="h2" style="color: {{ block.settings.title_color }}">{{ product.title }}</h1>
               </div>
             {%- comment -%} ==================== end of block ==================== {%- endcomment -%}
 
@@ -666,7 +666,15 @@
       {
         "type": "title",
         "name": "Title",
-        "limit": 1
+        "limit": 1,
+        "settings": [
+          {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title color",
+            "default": "#000000"
+          }
+        ]
       },
       {
         "type": "variant-picker",

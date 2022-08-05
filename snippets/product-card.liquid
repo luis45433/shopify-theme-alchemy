@@ -74,13 +74,13 @@
       {%- endfor -%}
     {%- endif -%}
   </div>
-  <div class="card__content">
+  <div class="card__content text-center-leo">
     {%- if grid_show_vendor -%}
       <p class="card__vendor">{{ product.vendor }}</p>
     {%- endif -%}
 
     <h3 class="card__title">
-      <a href="{{ product.url | within: collection }}" class="card__link">{{ product.title | escape }}</a>
+      <a href="{{ product.url | within: collection }}" class="card__link pink-text">{{ product.title | escape }}</a>
     </h3>
     <div class="product-price">
       {% if product.price_varies %}
