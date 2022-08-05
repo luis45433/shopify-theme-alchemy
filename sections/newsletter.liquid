@@ -59,7 +59,12 @@
           {% render 'svg-email' %}
         </div>
         {%- if section.settings.heading != blank -%}
-          <h2 class="section-heading h3">{{ section.settings.heading }}</h2>
+          <h2 class="section-heading section-heading-leo h3">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="rte reading-width clicker-font pink-text" style="font-size: 2.5rem; margin-top: 0;">
+            {{ section.settings.text }}
+          </div>
         {%- endif -%}
         <div class="input-with-button">
           <div class="input-with-button__input-wrapper">
@@ -75,11 +80,6 @@
           <button class="input-with-button__button button" type="submit">{{ 'layout.signup.button' | t }}</button>
         </div>
 
-        {%- if section.settings.text != blank -%}
-          <div class="rte reading-width">
-            {{ section.settings.text }}
-          </div>
-        {%- endif -%}
       {% endform %}
     </div>
   </div>

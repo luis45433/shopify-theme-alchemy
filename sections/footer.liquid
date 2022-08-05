@@ -104,8 +104,10 @@
           <div class="payment-methods__inner">
             {%- for type in shop.enabled_payment_types -%}
               {{ type | payment_type_svg_tag: class: 'payment-icon' }}
-            {%- endfor -%}
-          </div>
+
+              {%- endfor -%}
+            </div>
+            <img src="{{ section.settings.payment_methods_image | img_url: '200x200' }}" alt="" class="">
         </div>
       {%- endif -%}
     </div>
@@ -161,6 +163,11 @@
         "id": "show_payment_icons",
         "label": "Show payment icons",
         "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "payment_methods_image",
+        "label": "Payment methods image"
       },
       {
         "type": "header",

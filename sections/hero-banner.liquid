@@ -31,7 +31,7 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<div class="banner{{ bg_class }}{% unless settings.show_breadcrumbs %} banner--no-breadcrumbs{% endunless %}">
+<div class="custom-banner-leo banner{{ bg_class }}{% unless settings.show_breadcrumbs %} banner--no-breadcrumbs{% endunless %}">
   {%- if section.settings.bg_style == 'image' and section.settings.image != blank -%}
     {% render 'hero-banner-image', img: section.settings.image %}
     <span class="banner__overlay"></span>
@@ -45,7 +45,7 @@
       </h1>
     {%- else -%}
       <h1 class="clicker-font clicker-font-size-4">{{ title }}</h1>
-      <h1 class="playfair_display_n4">{{ section.settings.main-title }}</h1>
+      <h1 class="playfair_display_n4 margin-bottom-leo">{{ section.settings.main-title }}</h1>
       <h2 class="clicker-font clicker-font-size-4">{{ section.settings.sub-title }}</h2>
       <!-- <input class="button-pink" type="button" value="Shop Our Creams"> -->
       <input class="input-with-button__button button" type="button" value="Shop Our Creams">

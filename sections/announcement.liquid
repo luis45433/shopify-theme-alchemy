@@ -5,12 +5,18 @@
         background-color: {{ section.settings.announcement_bar_bg_color }};
         color: {{ section.settings.announcement_bar_bg_text }};
       }
+      .announcement-image {
+        color: white;
+        filter: brightness(0) invert(1);
+        vertical-align: middle;
+      }
     </style>
     <div class="announcement">
       {%- if section.settings.announcement_bar_link != blank -%}
         <a href="{{ section.settings.announcement_bar_link }}">
       {%- endif -%}
       <div class="announcement__inner">
+        <img src="{{ section.settings.image_1 | img_url: 'small'}}" alt="" class="announcement-image">
         {{ section.settings.announcement_bar_text }}
       </div>
       {%- if section.settings.announcement_bar_link != blank -%}
@@ -40,6 +46,11 @@
 				"type": "text",
 				"id": "announcement_bar_text",
 				"label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image"
       },
       {
 				"type": "url",

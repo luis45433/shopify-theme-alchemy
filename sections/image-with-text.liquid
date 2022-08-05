@@ -98,6 +98,11 @@
               {{- section.settings.heading | escape -}}
             </h2>
           {%- endif -%}
+          {%- if section.settings.sub_text != blank -%}
+            <h3 class="clicker-font clicker-font-size-4 pink-text" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
+              {{- section.settings.sub_text | escape -}}
+            </h3>
+          {%- endif -%}
           {%- if section.settings.text != blank -%}
             <div class="rte" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.2s">
               {{ section.settings.text }}
@@ -158,6 +163,12 @@
         "id": "heading",
         "label": "Heading",
         "default": "Image with text"
+      },
+      {
+        "type": "text",
+        "id": "sub_text",
+        "label": "Heading sub label",
+        "default": "Subtext"
       },
       {
         "type": "richtext",
