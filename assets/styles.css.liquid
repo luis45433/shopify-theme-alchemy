@@ -6133,7 +6133,7 @@ h3.card__title {
 }
 .header-overlapping:not(.no-banner) .pageheader__contents {
   position: absolute;
-  top: 0;
+  top: -30;
   left: 0;
 }
 
@@ -6798,7 +6798,8 @@ h3.card__title {
   color: {{ hero_tint_text_color }};
 }
 .header-overlapping .shopify-section:first-child .banner.banner--bg {
-  padding-top: calc(var(--header-height) + 20px);
+  /* padding-top: calc(var(--header-height) + 30px);  ORIGINAL */
+  padding-top: calc(var(--header-height) + 170px);
 }
 .shopify-section:last-child .banner {
   padding-bottom: 60px;
@@ -6869,6 +6870,7 @@ body:not(.header-overlapping) .active-banner .banner--bg-color::before {
 .banner__text {
   position: relative;
   text-align: center;
+  top: -90px;
 }
 .banner__text h1:last-child {
   margin-bottom: 0;
@@ -7814,10 +7816,48 @@ shopify-payment-terms {
   font-size: {{ font_size_base_int | times: 4.0 }}px;
 }
 
+.clicker-font-size-8 {
+  font-size: {{ font_size_base_int | times: 8.0 }}px;
+}
+
 .clicker-font-size-3 {
   font-size: {{ font_size_base_int | times: 3.0 }}px;
 }
 
 .just-sunday-font {
   font-family: "JustSunday"!important;
+}
+
+.custom-banner-leo {
+  padding-top: 100px;
+}
+
+.playfair-font {
+  font-family: 'Playfair Display', serif;
+  color: #ddf1f0;
+}
+
+.top-menu-logo-leo {
+  padding: 0 80px;
+  height: 90px;
+}
+
+.menu-padding-leo {
+  padding: 10px 20px;
+}
+
+.margin-bottom-leo {
+  margin-bottom: 0;
+}
+
+.pink-text {
+  color: #f4ab9d;
+}
+
+.section-heading-leo {
+  margin-bottom: 0;
+}
+
+.logo-list-color-leo {
+  filter: opacity(0.4) drop-shadow(0 0 0 #3E7879);
 }
