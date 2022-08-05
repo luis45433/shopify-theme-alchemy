@@ -207,7 +207,8 @@
                       </li>
                     {%- endfor -%}
                   </ul>
-                    {% if shop.customer_accounts_enabled %}
+                    <!-- TODO: change to small icon menu -->
+                    <!-- {% if shop.customer_accounts_enabled %}
                       <ul class="account-links">
                         {% if customer %}
                           <li class="your-acct"><a href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a></li>
@@ -219,7 +220,7 @@
                           <li class="login"><a href="{{ routes.account_login_url }}">{{ 'layout.customer.log_in' | t }}</a></li>
                         {% endif %}
                       </ul>
-                    {% endif %}
+                    {% endif %} -->
                 </div>
               </div>
             </div>
