@@ -94,12 +94,12 @@
       <div class="media-with-text__half">
         <div class="media-with-text__text align-{{ section.settings.text_alignment }}{% if section.settings.text_center_mobile %} align-center-mobile{% endif %}{% if bg_color == settings.col_page_bg or section.settings.color_scheme == 'none' and section.settings.skip_container == false %} media-with-text__text--no-pad{% endif %}">
           {%- if section.settings.heading != blank -%}
-            <h2 class="section-heading" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
+            <h2 class="section-heading margin-bottom-leo-0 text-center-leo" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
               {{- section.settings.heading | escape -}}
             </h2>
           {%- endif -%}
           {%- if section.settings.sub_text != blank -%}
-            <h3 class="clicker-font clicker-font-size-4 pink-text" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
+            <h3 class="clicker-font clicker-font-size-4 pink-text text-center-leo" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
               {{- section.settings.sub_text | escape -}}
             </h3>
           {%- endif -%}
