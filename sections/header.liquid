@@ -79,7 +79,7 @@
 
 <div data-section-type="header">
   <div class="pageheader" id="pageheader" data-cc-animate>
-    <header class="pageheader__contents
+    <header class="pageheader__contents menu-padding-leo
       {%- if section.settings.enable_sticky %} pageheader__contents--sticky{% endif -%}
       {%- if section.settings.enable_header_overlap %} pageheader__contents--overlap{% endif -%}
       {%- if section.settings.enable_inline_links %} pageheader__contents--inline{% endif -%}
@@ -87,13 +87,13 @@
       {%- if section.settings.enable_inline_links %} data-nav-inline="true" {% endif -%}
       id="pageheader__contents">
 
-      <div class="pageheader__layout">
+      <div class="pageheader__layout top-menu-logo-leo">
         <div class="header-left">
           {%- if section.settings.enable_inline_links -%}
             <div class="inline-header-nav">
               <div class="nav-row multi-level-nav" role="navigation" aria-label="{{ 'general.navigation.main_navigation_aria_label' | t | escape }}">
                 <div class="tier-1">
-                  <ul>
+                  <ul class="playfair-font">
                     {%- for link in linklists[section.settings.menu_linklist].links -%}
                       {%- liquid
                         assign has_mega_drop_down = true
@@ -143,7 +143,7 @@
                                 </a>
 
                                 {%- if child_link.links != blank -%}
-                                  <ul>
+                                  <ul class="playfair-font">
                                     {%- for child_child_link in child_link.links -%}
                                       <li class="{% if child_child_link.active %}active{% endif %}">
                                         <a href="{{ child_child_link.url }}">{{ child_child_link.title | strip }}</a>
