@@ -1,0 +1,55 @@
+<div class="mycontainer cc-animate-init -in cc-animate-complete" data-cc-animate>
+    <div class="header-instafeed">
+        <h2 class="margin-bottom-leo-0">{{ section.settings.main_title }}</h2>
+        <h3 class="clicker-font pink-text">{{ section.settings.sub_title }}</h3>
+    </div>
+    <div class="col1">
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><p class="paragraph-instafeed clicker-font">Natural</p></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><p class="paragraph-instafeed clicker-font">Love Yourself</p></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+    </div>
+    <div class="col2">        
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><p class="paragraph-instafeed clicker-font">High Quality</p></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+        <div><p class="paragraph-instafeed clicker-font">Non Toxic</p></div>
+        <div><img src="{{ section.settings.image | img_url: 'medium' }}" alt="" class="image-instafeed"></div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Instafeed",
+    "class": "section-instafeed",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_title",
+        "label": "Heading",
+        "default": "Follow us"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Subtitle",
+        "default": "Fun"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "soaps and creams"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Instafeed",
+        "category": "Instafeed"
+      }
+    ]
+}
+{% endschema %}
